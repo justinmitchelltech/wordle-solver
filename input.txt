@@ -1,0 +1,5 @@
+a,w
+l,w
+i,y
+v,y
+e,w
