@@ -1,7 +1,7 @@
 # Brute-Force Wordle Solver
 
 ## Usage
-*I'm going to document how to use this tool by Feb 27 (end of the weekend).*
+*I'm going to cleanup the code and document how to use this tool by Feb 27 (end of the weekend).*
 
 ## Refrences/Credits
 1. [Long list of english words](https://github.com/dwyl/english-words/blob/master/words_alpha.txt)
