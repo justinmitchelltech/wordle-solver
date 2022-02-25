@@ -1,4 +1,4 @@
-# Brute-Force Wordle Solver
+# Wordle Solver
 
 ## Usage
 *I'm going to cleanup the code and document how to use this tool by Feb 27 (end of the weekend).*
