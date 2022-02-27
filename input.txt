@@ -1,5 +1,5 @@
-a,w
-l,w
-i,y
-v,y
-e,w
+s,k,
+a,y,
+l,k,
+e,k,
+s,k,
