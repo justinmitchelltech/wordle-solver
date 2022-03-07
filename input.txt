@@ -1,5 +1,5 @@
-s,k,
+s,g,
 a,y,
 l,k,
 e,k,
-s,k,
+t,g,
