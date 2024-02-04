@@ -51,7 +51,8 @@ for file in files:  # Loop through each list of words
                     posibilities = filtered[filtered[col] == info_char]
                 else:
                     col = 'char'+str(i)
-                    posibilities = filtered[filtered[col] == info_char].append(posibilities)
+                    posibilities = pd.concat([filtered[filtered[col] == info_char], posibilities])
+                    # posibilities = filtered[filtered[col] == info_char].append(posibilities)
 
             filtered = posibilities.drop_duplicates()
             filtered = filtered[filtered[not_col] != info_char]  # Remove words where letter is in yellow column
@@ -71,7 +72,8 @@ for file in files:  # Loop through each list of words
     filtered.loc[:, ['source']] = source_str
 
     filtered = filtered.sort_values('score', ascending=False)  # Sort them by their frequency score 
-    output = output.append(filtered)  # Append the filtered results from this word list to list of all possibilities
+    output = pd.concat([output, filtered])
+    # output = output.append(filtered)  # Append the filtered results from this word list to list of all possibilities
 
 output = output.reset_index()  
 output = output[['word', 'score', 'source']]
